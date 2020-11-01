@@ -17,7 +17,7 @@ def ad(request):
                 s.phone=request.POST.get('tel')
                 s.save()
                 messages.info(request,'Data added')
-                return redirect('add1')
+                return redirect('home')
                 
     else:
         messages.info(request,'Please login')
